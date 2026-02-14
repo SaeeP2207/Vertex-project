@@ -3,7 +3,8 @@ import numpy as np
 
 class Moving_Stickman(Scene):
     def construct(self):
-        self.add_sound("trimmed_music.wav")  
+
+        self.add_sound("trimmed_music.wav") 
 
         bg = Rectangle(
             width=config.frame_width,
@@ -459,5 +460,6 @@ class Moving_Stickman(Scene):
             rate_func=linear
         )
         stickman.remove_updater(update_stickman)
+
 
         self.play(FadeOut(stickman))
